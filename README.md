@@ -29,12 +29,13 @@ train.py: This function is used for training model and testing the model perform
 
 predict.py: This function can rapidly test the predictive performance of our model by loading saved model parameters.
 
-Example: 
+
+# Test our own model PepGPL
 
 Users can directly download our saved model parameters and preprocessed data features from the `./result` directory for model prediction.
 
 ```bash
-python validation_model.py
+python predict.py
 ```
 
 
@@ -69,7 +70,7 @@ Example:
 
 ```bash
 cd train
-python model_train.py --path_dataset ../dataset/pep_prot_label_dataset_shuffle.csv
+python train.py --path_dataset ../dataset/pep_prot_label_dataset_shuffle.csv
 ```
 # Contact 
 If you have any questions or suggestions with the code, please let us know. Contact Ruikang Zhou at zhouruikang@csu.edu.cn
