@@ -31,8 +31,8 @@ predict.py: This function can rapidly test the predictive performance of our mod
 
 
 # Test our own model PepGPL
-
-Users can directly download our saved model parameters and preprocessed data features from the `./result` directory for model prediction.
+Step1, you need to download ProtBERT, saved model parameters and test cases from the following URL. And then put prot_bertbfd file in the current directory. Put model_state_dict.pth and test_dataset.pkl in `./result` directory.
+Step2, you can directly use our saved model parameters and preprocessed data features from the `./result` directory for model prediction.
 
 ```bash
 python predict.py
