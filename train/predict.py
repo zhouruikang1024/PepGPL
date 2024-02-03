@@ -41,7 +41,7 @@ def boost_mask_BCE_loss(y_pred, y_true, pep_mask, bs_flag):
     return torch.sum(loss) / torch.sum(pep_mask)
 
 
-def model_eval(dataloader, model, PepPI_criterion, config, val_flag):
+def model_eval(dataloader, model, PepPI_criterion, config):
     label_PepPI_pred = torch.empty([0]).to(config.device)
     label_PepPI_real = torch.empty([0]).to(config.device)
     pred_PepPI_prob = torch.empty([0]).to(config.device)
